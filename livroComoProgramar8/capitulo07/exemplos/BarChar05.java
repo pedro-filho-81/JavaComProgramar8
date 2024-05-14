@@ -24,7 +24,7 @@ public class BarChar05 {
          else
             System.out.printf("%02d-%02d", counter * 10, counter * 10 + 9);
 
-         // imprime barra de asteriscos
+         // imprime barra de asteriscos do valor do elemento do array
          for (int star = 0; star < array[counter]; star++) {
             System.out.print("*");
          }
