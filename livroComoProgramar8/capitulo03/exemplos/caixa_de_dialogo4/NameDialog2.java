@@ -9,7 +9,10 @@ public class NameDialog2 {
       // variável name recebe o nome informado pelo usuário
       String name = JOptionPane.showInputDialog(null, "What is your name? ");
 
-      // variável message exiba mensagem de boas vindas
+      /*
+       * variável message exibe a mensagem de boas
+       * vindas ao nome informado pelo usuário
+       */
       String message = String.format("Welcome, %s, to Java Programming!", name);
 
       // exibe a mensagem comprimentando o usuário
