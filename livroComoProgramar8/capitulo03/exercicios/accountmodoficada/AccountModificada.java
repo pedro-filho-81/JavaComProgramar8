@@ -47,6 +47,9 @@ public class AccountModificada {
          // retirar recebe o valor restante do saldo
          this.withdrawal = withdrawAccount;
       } // end withdraw
+      else {
+         System.out.println("WithDrawal amount exceeded account balance");
+      }
    } // end withdrawal
 
    public double getWithdraw() {
@@ -74,4 +77,14 @@ public class AccountModificada {
    public String getName() {
       return name; // retorna o valor do nome para o chamador
    } // end getName
+
+   // exibe o status do cliente
+   public void status() {
+      // exibe os saldos atuais
+      System.out.println("Saldo atual: ");
+      System.out.printf("Nome: %s, Saldo: $%.2f, Saque: $%.2f %n%n",
+            this.getName(),
+            this.getBalance(),
+            this.getWithdraw());
+   } // end status
 } // end class Account
