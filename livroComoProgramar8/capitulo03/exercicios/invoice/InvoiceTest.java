@@ -28,6 +28,28 @@ import java.util.Scanner;
 
 public class InvoiceTest {
    public static void main(String[] args) {
-      System.out.println("Construir a classe Invoice");
+
+      // cria o objeto Scanner input
+      Scanner input = new Scanner(System.in);
+
+      // cria o objeto myFatura1 da ClasseInvoice
+      ClasseInvoice myFatura1 = new ClasseInvoice("1111", "Compras diversas", 5, 12.25);
+
+      // exibe status
+      myFatura1.status();
+
+      // entrada das faturas pelo usuário
+      System.out.println("Nova fatura:");
+      System.out.print("Número da fatura: ");
+      myFatura1.setFatura(input.nextLine());
+      System.out.print("Descrição: ");
+      myFatura1.setDescricao(input.nextLine());
+      System.out.print("Quantidade: ");
+      myFatura1.setQuantia(input.nextInt());
+      System.out.print("Preço R$: ");
+      myFatura1.setPreco(input.nextDouble());
+
+      // exibe fatura informada pelo usuário
+      myFatura1.status(); // exibe a fatura
    } // end main
 } // end class
