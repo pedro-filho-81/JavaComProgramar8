@@ -18,20 +18,20 @@ public class AccountTest {
              * momento em que cada objeto Account é criado.
              */
 
+            // cria objeto myAccount1
             AccountModificada myAccount1 = new AccountModificada("Jane Green", 50.00, 0.00);
-            AccountModificada myAccount2 = new AccountModificada("John Blue", -7.53, 0.00);
+            // exibe myAccount1
+            myAccount1.status();
 
-            // exibe saldo inicial de cada objeto
-            System.out.print("Saldo inicial");
-            System.out.printf("\n%s, balance: $%.2f, withdraw: $%.2f%n",
-                        myAccount1.getName(), myAccount1.getBalance(),
-                        myAccount1.getWithdraw());
-            System.out.printf("%s, balance: $%.2f. withdraw: $%.2f %n%n",
-                        myAccount2.getName(), myAccount2.getBalance(),
-                        myAccount2.getWithdraw());
-            // cria um Scanner para obter entrada a partir da janela de comando
+            // cria objeto myAccount2
+            AccountModificada myAccount2 = new AccountModificada("John Blue", -7.53, 0.00);
+            // exibe myAccount2
+            myAccount2.status();
+
+            // cria o objeto Scanner input para obter entrada a partir da janela de comando
             Scanner input = new Scanner(System.in);
 
+            // entrada de dados
             System.out.print("Enter deposit amount for account1: "); // prompt
             double depositAmount = input.nextDouble(); // obtém a entrada do usuário
             System.out.printf("%n adding %.2f to account1 balance%n%n",
@@ -39,12 +39,7 @@ public class AccountTest {
             myAccount1.deposit(depositAmount); // adiciona o saldo de account1
 
             // exibe os saldos
-            System.out.printf("%s, balance: $%.2f, withdraw: $%.2f, %n",
-                        myAccount1.getName(), myAccount1.getBalance(),
-                        myAccount1.getWithdraw());
-            System.out.printf("%s, balance: $%.2f, withdraw: $%.2f %n%n",
-                        myAccount2.getName(), myAccount2.getBalance(),
-                        myAccount2.getWithdraw());
+            myAccount1.status();
 
             System.out.print("Enter deposit amount for account2: "); // prompt
             depositAmount = input.nextDouble(); // obtém a entrada do usuárioÿ
@@ -53,38 +48,22 @@ public class AccountTest {
             myAccount2.deposit(depositAmount); // adiciona ao saldo de account2
 
             // exibe os saldos atuais
-            System.out.println("Saldo atual:");
-            System.out.printf("%s, balance: $%.2f %n",
-                        myAccount1.getName(), myAccount1.getBalance());
-            System.out.printf("%s, balance: $%.2f %n%n",
-                        myAccount2.getName(), myAccount2.getBalance());
-            System.out.println("Digite o valor do saque R$: ");
+            myAccount2.status();
+
+            // saque myAccount1
+            System.out.println("myAccount1: Digite o valor do saque R$: ");
             double withdrawAccount = input.nextDouble();
             myAccount1.withdraw(withdrawAccount);
 
-            // exibe os saldos atuais
-            System.out.println("Saldo atual depois do saque:");
-            System.out.printf("%s, balance: $%.2f, withdraw: $%.2f %n",
-                        myAccount1.getName(), myAccount1.getBalance(),
-                        myAccount1.getWithdraw());
+            // exibe o saldo
+            myAccount1.status();
 
-            System.out.println("Digite o valor do saque R$: ");
+            // saque para myAccount2
+            System.out.println("myAccount2: Digite o valor do saque R$: ");
             withdrawAccount = input.nextDouble();
             myAccount2.withdraw(withdrawAccount);
 
-            // exibe os saldos atuais
-            System.out.println("Saldo atual depois do saque:");
-            System.out.printf("Account2: %s, balance: $%.2f, withdraw: $%.2f %n",
-                        myAccount2.getName(), myAccount2.getBalance(),
-                        myAccount2.getWithdraw());
-            System.out.println("Account2: Digite o valor do saque R$: ");
-            withdrawAccount = input.nextDouble();
-            myAccount2.withdraw(withdrawAccount);
-
-            // exibe os saldos atuais
-            System.out.println("Saldo atual depois do saque:");
-            System.out.printf("Account2: %s, balance: $%.2f, withdraw: $%.2f %n",
-                        myAccount2.getName(), myAccount2.getBalance(),
-                        myAccount2.getWithdraw());
+            // exibe o saldo
+            myAccount2.status();
       } // end main
 } // end class
