@@ -91,6 +91,6 @@ public class ClasseEmployee {
       System.out.printf("Aumento de 10%%: R$ %.2f%n", aumento());
       // exibe salário anual com o aumento de 10%
       System.out.printf("Salário anual: R$ %.2f%n", (salarioAnual() + aumento()));
-
    } // end status
+
 } // end class
