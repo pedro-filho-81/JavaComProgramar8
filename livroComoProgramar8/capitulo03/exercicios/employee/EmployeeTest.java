@@ -8,10 +8,12 @@ public class EmployeeTest {
       Scanner input = new Scanner(System.in);
 
       // cria o objeto da class Employee
-      ClasseEmployee myEmployee = new ClasseEmployee("Pedro", "Filho", 1647.00);
-      System.out.println("Construindo a classe Employee.");
+      ClasseEmployee myEmployee1 = new ClasseEmployee("Pedro", "Filho", 1650.25);
+      // cria o objeto myEmployee2 da classe Employee
+      ClasseEmployee myEmployee2 = new ClasseEmployee("Cleonice", "morais", 2125.25);
 
       // exibe
-      myEmployee.status();
+      myEmployee1.status();
+      myEmployee2.status();
    } // end main
 } // end class
