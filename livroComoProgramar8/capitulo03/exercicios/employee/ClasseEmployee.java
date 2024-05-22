@@ -31,6 +31,31 @@ public class ClasseEmployee {
       this.salarioMes = salarioMes;
    } // end construct
 
+   // setNome
+   public void setNome(String nome) {
+      this.nome = nome;
+   } // end setNome
+
+   // getNome
+   public String getNome() {
+      return nome;
+   } // end getNome
+
+   // setSobreNome
+   public void setSobreNome(String sobreNome) {
+      this.sobreNome = sobreNome;
+   } // end setSobreNome
+
+   // getSobreNome
+   public String getSobreNome() {
+      return sobreNome;
+   } // end getSobreNome
+
+   // setSalario
+   public void setSalarioMes(double salarioMes) {
+      this.salarioMes = salarioMes;
+   } // end setSalarioMes
+
    // cria método status
    public void status() {
       System.out.println("\nNovo Empregdo:");
