@@ -90,5 +90,3 @@ public class Account03 {
       return name; // retorna o valor do nome para o chamador
    } // end getName
 } // end class Account
-
-} // end class Account
