@@ -2,6 +2,8 @@ package capitulo03.exercicios.accountmodoficada;
 
 import java.util.Scanner;
 
+import capitulo03.exercicios.date.ClasseDate;
+
 public class AccountTest {
       /*
        * Cria e manipula um objeto Account
@@ -66,4 +68,5 @@ public class AccountTest {
             // exibe o saldo
             myAccount2.status();
       } // end main
-} // end class
+}
+// end class
