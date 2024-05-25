@@ -17,6 +17,10 @@ public class StudentTest {
 
    // create method display Student
    public static void displayStudent(Student displayToStudent) {
-      System.out.printf("%s's letter grade is: %s%n", displayToStudent.getName(), displayToStudent.getLetterGrade());
-   }
-}
+      // show result
+      System.out.printf("%s's, average %.1f, letter grade is: %s%n",
+            displayToStudent.getName(), // nome
+            displayToStudent.getAverage(), // média
+            displayToStudent.getLetterGrade()); // nota
+   } // end displayStudent
+} // end class StudentTest
