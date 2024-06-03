@@ -72,5 +72,5 @@ public class IndeceMassaCorporal {
             System.out.println("30 a 34,9 kg/m² - Obesidade grau I");
          }
       }
-   } // end Main
-} // end class
+   }
+// end Main
