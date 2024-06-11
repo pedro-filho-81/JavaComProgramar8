@@ -34,5 +34,44 @@ public class LimiteDeCredito18 {
       int limiteCredito = 0;
       int novoSaldo = 0;
 
+      // entrada de dados
+      System.out.println("\nLimite de crédito:");
+      System.out.print("Entre com o número da conta (-1 para sair): ");
+      conta = input.nextInt();
+
+      // enquanto conta diferente de -1 faça
+      while (conta != -1) {
+
+         // entrada do usuário
+         System.out.print("Entre com o saldo inicial R$ ");
+         saldoInicial = input.nextInt();
+         System.out.print("Entre com o total de taxas R$ ");
+         totalTaxas = input.nextInt();
+         System.out.print("Entre com o total de créditos R$ ");
+         totalCreditos = input.nextInt();
+         System.out.print("Entre com o limite de crédito R$ ");
+         limiteCredito = input.nextInt();
+
+         // calcular
+         novoSaldo = saldoInicial + totalTaxas - totalCreditos;
+
+         // exibe resultado
+         if (novoSaldo > limiteCredito) {
+            System.out.println("Novo saldo R$ " + novoSaldo);
+            System.out.println("Conta: " + conta);
+            System.out.println("Limite de crédito R$ " + limiteCredito);
+            System.out.println("Saldo R$ " + novoSaldo);
+            System.out.println("Limite de crédito excedido.");
+         } else {
+            System.out.println("Novo saldo R$ " + novoSaldo);
+         } // end else
+
+         // entrada de dados
+         System.out.println("\nLimite de crédito:");
+         System.out.print("Entre com o número da conta (-1 para sair): ");
+         conta = input.nextInt();
+
+      } // end while
+      System.out.println("Volte sempre.");
    } // end main
 } // end class
