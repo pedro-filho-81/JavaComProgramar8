@@ -1,4 +1,4 @@
-package capitulo04.exemplos.average_contador;
+package exemplos.average_contador;
 
 /*
  * Resolvendo o problema da média da classe usando a repetição controlado por controlador

@@ -1,4 +1,4 @@
-package capitulo04.exemplos.pre_pos_increment;
+package exemplos.pre_pos_increment;
 
 /*
  * operadores de pré-increment e pós-increment

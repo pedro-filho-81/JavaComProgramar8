@@ -1,4 +1,4 @@
-package capitulo04.exemplos.average_sentinela;
+package exemplos.average_sentinela;
 
 /*
  * Resolvendo o problema da média da classe usando a repetição controlada por sentinela

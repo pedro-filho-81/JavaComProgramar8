@@ -28,8 +28,6 @@ public class LocalizaMaiorNuMero21 {
       int number; // entrada do usuário
       int largest = 0; // compara o maior valor
       int maior = 0; // recebe o maior valor
-      int smaller = 0;
-      int menor = 1;
 
       // enquanto contador menor que 10 faça
       while (count < 10) {

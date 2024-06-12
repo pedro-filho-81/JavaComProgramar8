@@ -1,4 +1,4 @@
-package capitulo04.exemplos.students;
+package exemplos.students;
 
 /*
  * Classe Student armazena o nome e calcula a média das notas de um aluno

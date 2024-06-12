@@ -1,4 +1,4 @@
-package capitulo04.exemplos.students;
+package exemplos.students;
 
 /*
  * Cria e testa o objeto Student 
