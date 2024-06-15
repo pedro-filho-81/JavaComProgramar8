@@ -14,32 +14,27 @@ class DoisNumerosMaiores23 {
       // variáveis
       int count = 0;
       int maior = 0;
-      int larget = 0;
       int seg_maior = 0;
-      // int larget2 = 0;
       int num = 0;
 
-      while (count < 5) {
-         // entrada de dadps
-         System.out.print("Digite um número inteiro: ");
-         num = input.nextInt();
-         larget = Math.max(larget, num);
+      // entrada de dadps
+      System.out.print(count + 1 + "º inteiro: ");
+      num = input.nextInt();
 
-         if (count == 0) {
-            maior = larget;
-            seg_maior = larget;
-         } // end if count
+      while (count < 10) {
 
-         if (maior < larget) {
-            maior = larget;
-         } // end if
+         maior = Math.max(maior, num);
 
-         if (larget != maior && seg_maior < larget) {
-            seg_maior = larget;
+         if (num < maior) {
+            seg_maior = Math.max(seg_maior, num);
          }
          count++;
+         // entrada de dadps
+         System.out.print(count + "º inteiro: ");
+         num = input.nextInt();
       } // end while
-        // resultado
+
+      // resultado
       System.out.printf("O maior valor é %d%n", maior);
       System.out.println("O segundo maior valor é " + seg_maior);
    } // end main
