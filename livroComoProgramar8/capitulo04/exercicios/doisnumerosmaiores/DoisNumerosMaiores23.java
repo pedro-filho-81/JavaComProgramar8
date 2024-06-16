@@ -17,24 +17,26 @@ class DoisNumerosMaiores23 {
       int seg_maior = 0;
       int num = 0;
 
-      // entrada de dadps
-      System.out.print(count + 1 + "º inteiro: ");
-      num = input.nextInt();
+      while (count < 5) {
 
-      while (count < 10) {
+         // entrada de dados
+         System.out.print("Informe o ");
+         System.out.print(count + 1 + "º inteiro: ");
+         num = input.nextInt();
 
          maior = Math.max(maior, num);
+         System.out.println("maior = " + maior);
 
-         if (num < maior) {
+         if (num < maior && seg_maior < maior) {
             seg_maior = Math.max(seg_maior, num);
+            System.out.println("segundo maior = " + seg_maior);
          }
+
          count++;
-         // entrada de dadps
-         System.out.print(count + "º inteiro: ");
-         num = input.nextInt();
       } // end while
 
       // resultado
+      System.out.println("\n=-=-=-=-=-=-=-=-=-=-");
       System.out.printf("O maior valor é %d%n", maior);
       System.out.println("O segundo maior valor é " + seg_maior);
    } // end main
