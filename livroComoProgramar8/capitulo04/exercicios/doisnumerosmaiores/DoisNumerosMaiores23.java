@@ -10,7 +10,9 @@ import java.util.Scanner;
 
 class DoisNumerosMaiores23 {
    public static void main(String[] args) {
+
       Scanner input = new Scanner(System.in);
+
       // variáveis
       int count = 0;
       int maior = 0;
@@ -20,24 +22,25 @@ class DoisNumerosMaiores23 {
       while (count < 5) {
 
          // entrada de dados
-         System.out.print("Informe o ");
-         System.out.print(count + 1 + "º inteiro: ");
+         System.out.print("Informe o " + (count + 1) + "º inteiro: ");
          num = input.nextInt();
 
          maior = Math.max(maior, num);
          System.out.println("maior = " + maior);
 
-         if (num < maior && seg_maior < maior) {
+         if (num < maior && seg_maior < maior || count == 0 && num < maior) {
             seg_maior = Math.max(seg_maior, num);
             System.out.println("segundo maior = " + seg_maior);
-         }
+         } // end if
 
          count++;
+
       } // end while
 
       // resultado
       System.out.println("\n=-=-=-=-=-=-=-=-=-=-");
       System.out.printf("O maior valor é %d%n", maior);
       System.out.println("O segundo maior valor é " + seg_maior);
+      System.out.println();
    } // end main
 } // end class
