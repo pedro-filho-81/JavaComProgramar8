@@ -11,7 +11,7 @@
  * código para tornar o problema mais desafiador. [Dica: aplique 
  * as convenções de recuo que você aprendeu.]
  */
-package exercicios.elseoscilante;
+package elseoscilante;
 
 public class ElseOscilante27 {
    public static void main(String[] args) {
