@@ -19,10 +19,14 @@ public class DecimalParaBinario31_2 {
         System.out.print("Informe o valor binário (-1 para sair): ");
         // entrada do usuário
         numeroBinario = input.nextInt();
+
+        // se número binário diferente de -1
         if (numeroBinario != -1) {
+            // imprima
             System.out.printf("O valor binário %d%n", numeroBinario);
         } // end if
 
+        // enquanto nùmero binário diferente de -1 faça
         while (numeroBinario != -1) {
 
             // enquanto número binário maior que zero faça
@@ -37,8 +41,11 @@ public class DecimalParaBinario31_2 {
                 // incrementando a variável de potência em 1 para ser usada como potência para 2
                 power++;
             } // end while
-              // exibe resultado
+
+            // exibe resultado
             System.out.printf("Equivale ao valor decimal: %d%n", numeroDecimal);
+
+            // inicializa as variáveis após resolução
             power = 0;
             numeroDecimal = 0;
 
@@ -47,7 +54,9 @@ public class DecimalParaBinario31_2 {
             System.out.print("Informe o valor binário (-1 para sair): ");
             // entrada do usuário
             numeroBinario = input.nextInt();
+            // se o número binário diferente de -1
             if (numeroBinario != -1) {
+                // imprima
                 System.out.printf("O valor binário %d%n", numeroBinario);
             } // end if
         } // end while -1
