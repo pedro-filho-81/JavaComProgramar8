@@ -14,9 +14,6 @@ public class MultiplosDeDois33 {
             System.out.printf("%d, ", multiplos);
             multiplos *= 2; // calcula o número
         } // end while
-        int x = 10;
-        int y = 15;
-        System.out.println((x + y) + 1);
 
     } // end main
 } // end class
