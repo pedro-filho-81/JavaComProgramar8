@@ -9,5 +9,6 @@ public class WhileCounter5_1 {
             System.out.printf("%d ", count); // exibe os valores do cotador
             ++count; // soma 1 ao contador
         } // end while
+
     } // end main
-} // end class
+} // end class 
