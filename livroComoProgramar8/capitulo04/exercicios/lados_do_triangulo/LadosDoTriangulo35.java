@@ -26,8 +26,10 @@ public class LadosDoTriangulo35 {
         System.out.print("Informe o lado EF: ");
         int ladoEF = input.nextInt();
 
+        // CONTROLA A EXECUÇÃO DO PROGRAmA
+        // enquanto todos os lados forem diferentes de -1 faça
         while (ladoAB != -1 || ladoCD != -1 || ladoEF != -1) {
-                
+
             // se os lados forem maiores que zero faça
             if (ladoAB > 0 && ladoCD > 0 && ladoEF > 0) {
 
@@ -61,7 +63,6 @@ public class LadosDoTriangulo35 {
                 }
             } // end if > 0
         } // end while
-
 
     } // end main
 } // end class
