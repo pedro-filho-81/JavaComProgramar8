@@ -75,6 +75,7 @@ public class LetterGrades {
                 "B: ", bCount, // exibe número de notas B
                 "C: ", cCount, // exibe número de notas C 
                 "D: ", dCount, // exibe número de notas D
+                "E: ", eCount, // exibe o número de notas E
                 "F: ", fCount); // exibe número de notas F
         } // fim do if
         else // nenhuma nota foi inserida, assim gera a saída da mensagem apropriada
