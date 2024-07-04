@@ -15,24 +15,29 @@ public class LocalizaMenorValor11 {
         Scanner input = new Scanner(System.in);
 
         // variáveis
-        int valor;
-        int menor = 0;
+        int valor; // para entrada dos valores
+        int menor = 0; // para o menor valor encontrado
 
         // entrada de dados
         System.out.print("Informe o número de inteiro a cadastrar: ");
-        int n = input.nextInt();
+        int n = input.nextInt(); // usuário informa quantos valores vão ser cadastrados
 
-        // loop for para cadastrar inteiros
+        // loop for para cadastrar (n) inteiros
         for(int i  = 0; i < n; i++) {
         
-            System.out.print("Digite um inteiro: ");
-            valor = input.nextInt();
+            // entrada dos valores para comparação
+            System.out.printf("Digite o %dº inteiro: ", i + 1);
+            valor = input.nextInt(); // entrada do usuário
+            // se for a primeira contagem
             if (i == 0) {
+                // var menor recebe o primeiro valor
                 menor = valor;
             } // end if
-            menor = Math.min(menor, valor);
+            // menor recebe a verificação se o número digitado é o menor valor
+            menor = Math.min(menor, valor); // usando o método min da classe Math
 
         } // end for
+        // exibe o menor valor processado
         System.out.printf("O menor valor é: %d%n ", menor);
     } // end main
 } // end class
