@@ -10,6 +10,7 @@ public class InitArray03 {
     * adicionando 2
     */
    public static void main(String[] args) {
+
       final int ARRAY_LENGTH = 10; // VARIABLE CONSTant
       // declare and create an array
       int[] array = new int[ARRAY_LENGTH];
