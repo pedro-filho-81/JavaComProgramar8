@@ -1,3 +1,6 @@
+/*
+ * Classe Card representa uma carta do baralho
+ */
 package baralho_de_cartas;
 
 public class Card {
@@ -14,7 +17,7 @@ public class Card {
 
     // retorna representação String do Card
     public String toString() {
-        return face + "to" + suit;
+        return face + " to " + suit;
     } // end tostring
-    
+
 } // end class Card
