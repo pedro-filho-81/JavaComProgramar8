@@ -23,7 +23,7 @@ public class GradeBook {
     } // end setCurseName
 
     // método para recuperar o nome do curso
-    public String getCurseName() {
+    public String getCourseName() {
         return courseName;
     } // end getCurseName
 
@@ -38,10 +38,11 @@ public class GradeBook {
         
         // chama os métodos getMinimum Menor valor e getMaximom Maior
         System.out.printf("Lowest grade is %d%nHighest grade is %d%n%n",
-                getMinimum(), getMaximum());
+                getMinimum(), getMaximom());
 
         // chaMa o outputBarChart para inpriMir gráfico de distribuição de notas
-        outputBarChart();        
+        outputBarChart(); 
+
     } // end processGrades
 
     // método para localizar nota mínima
@@ -83,6 +84,7 @@ public class GradeBook {
 
         // retorna o maior valor
         return highGrade;
+
     } // end maior valor
 
     // método para calcular a média das notas
@@ -102,19 +104,50 @@ public class GradeBook {
         return (double) total / grades.length;
     } // end getAverage
 
-    // método para gerar a saída em gráfico de barras exibindo a distribuição das notas
+    // método para gerar a saída em gráfico de barras 
+    // exibindo a distribuição das notas
     public void outputBarChart() {
 
+        // cabeçalho
         System.out.println("Grade Distribution: ");
 
         // array para armazenar a frequência das notas
         int[] frequencia = new int[11];
 
-        // loop for para cada nota incrementa a frequência aprpriada
+        // loop for para cada nota incrementa a frequência apriada
         for (int grade : grades) {
             ++frequencia[grade / 10];
         } // end frequência
 
+        // loop for para cada frenquência de nota, imprime barra no gráfico
+        for (int count = 0; count < frequencia.length; count++) {
+            
+            // gera saída do rótulo de barra ( "00-09: ", ..., "90-99: ", "100: ")
+            if (count == 10)
+                System.out.printf("%5d: ", 100); 
+            else
+                System.out.printf("%02d-%02d: ", 
+                            count * 10, count * 10 + 9); 
+            
+            // imprime a barra de asteriscos
+            for (int stars = 0; stars < frequencia[count]; stars++)
+                System.out.print("*");
+            
+            System.out.println(); 
+            
+        } // end for
+
     } // end outputBarChart
+
+    // gera a saída do conteúdo do array de notas
+    public void outputGrades()
+    { 
+        System.out.printf("The grades are:%n%n");
+    
+        // gera a saída da nota de cada aluno 
+        for (int student = 0; student < grades.length; student++)
+            System.out.printf("Student %2d: %3d%n",
+                student + 1, grades[student]);
+    }
 
 } // end classe GradBook
